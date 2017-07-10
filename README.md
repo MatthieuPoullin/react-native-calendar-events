@@ -1,6 +1,10 @@
 # React-Native-Calendar-Events
 React Native Module for IOS and Android Calendar Events
 
+
+# Fork
+Get findCalendars method on Android for RN < 40
+
 ## Install
 ```
 npm install react-native-calendar-events
@@ -105,7 +109,7 @@ Get calendar authorization status.
 RNCalendarEvents.authorizationStatus()
 ```
 
-Returns: Promise 
+Returns: Promise
 - fulfilled: String - `denied`, `restricted`, `authorized` or `undetermined`
 - rejected: Error
 
@@ -127,7 +131,7 @@ Request calendar authorization. Authorization must be granted before accessing c
 RNCalendarEvents.authorizeEventStore()
 ```
 
-Returns: Promise 
+Returns: Promise
  - fulfilled: String - `denied`, `restricted`, `authorized` or `undetermined`
  - rejected: Error
 
@@ -151,10 +155,10 @@ Returns a promise with fulfilled found events.
 RNCalendarEvents.findEventById(id)
 ```
 
-Parameters: 
+Parameters:
  - id: String - The events unique id.
 
-Returns: Promise 
+Returns: Promise
  - fulfilled: Object | null - Found event with unique id.
  - rejected: Error
 
@@ -177,12 +181,12 @@ Returns a promise with fulfilled found events.
 RNCalendarEvents.fetchAllEvents(startDate, endDate, calendars)
 ```
 
-Parameters: 
+Parameters:
  - startDate: Date - The start date of the range of events fetched.
  - endDate: Date - The end date of the range of events fetched.
  - calendars: Array - List of calendar id strings to specify calendar events. Defaults to all calendars if empty.
 
-Returns: Promise 
+Returns: Promise
  - fulfilled: Array - Matched events within the specified date range.
  - rejected: Error
 
@@ -204,11 +208,11 @@ Creates calendar event.
 RNCalendarEvents.saveEvent(title, settings);
 ```
 
-Parameters: 
+Parameters:
  - title: String - The title of the event.
  - settings: Object - The event's settings.
 
-Returns: Promise 
+Returns: Promise
  - fulfilled: String - Created event's ID.
  - rejected: Error
 
@@ -236,12 +240,12 @@ Give the unique calendar event **id** to update an existing calendar event.
 RNCalendarEvents.saveEvent(title, {id: 'FE6B128F-C0D8-4FB8-8FC6-D1D6BA015CDE'});
 ```
 
-Parameters: 
+Parameters:
  - title: String - The title of the event.
  - settings: Object - The event's settings.
  - id: String - The event's unique id.
 
-Returns: Promise 
+Returns: Promise
  - fulfilled: String - Updated event's ID.
  - rejected: Error
 
@@ -342,7 +346,7 @@ RNCalendarEvents.removeEvent(id);
 Parameters:
  - id: String - The id of the event to remove.
 
-Returns: Promise 
+Returns: Promise
  - fulfilled: Bool - Successful
  - rejected: Error
 
@@ -368,7 +372,7 @@ RNCalendarEvents.removeFutureEvents(id);
 Parameters:
  - id: String - The id of the event to remove.
 
-Returns: Promise 
+Returns: Promise
  - fulfilled: Bool - Successful
  - rejected: Error
 
